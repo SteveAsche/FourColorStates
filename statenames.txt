@@ -1,0 +1,48 @@
+ME, NH
+NH, ME, VT, MA
+VT, NY, NH, MA
+MA, NH, VT, NY, CT, RI
+RI, MA, CT
+CT, MA, NY
+NY, VT, MA, CT, NJ, PA
+NJ, NY, PA, DE
+PA, NY, NJ, DE, MD, WV, OH
+DE, NJ, MD, PA
+MD, DE, VA, WV, PA
+VA, MD, WV, KY, TN, NC
+WV, MD, VA, KY, OH, PA
+NC, VA, SC, GA, TN
+SC, NC, GA
+GA, NC, SC, FL, AL, TN
+FL, GA, AL
+OH, PA, WV, KY, IN, MI
+KY, OH, WV, VA, TN, MD, IL, IN
+TN, KY, VA, NC, GA, AL, MS, AR, MO
+AL, TN, GA, FL, MS
+MS, TN, AL, LA, AR
+MI, OH, IN, WI
+IN, MI, OH, KY, IL
+IL, WI, IN, KY, MO, IA
+WI, MI, IL, IA, MN
+MN, WI, IA, SD, ND
+IA, MN, WI, IL, MO, NE, SD
+MO, IA, IL, KY, TN, AR, OK, KS, NE
+AR, MO, TN, MS, LA, TX, OK
+LA, AR, MS, TX
+ND, MN, SD, MT
+SD, ND, MN, IA, NE, WY, MT
+NE, SD, IA, MO, KS, CO, WY
+KS, NE, MO, OK, CO
+OK, KS, MO, AR, TX, NM, CO
+TX, OK, AR, LA, NM
+MT, ND, SD, WY, ID
+WY, MT, SD, NE, CO, UT, ID
+CO, WY, NE, KS, OK, NM, AZ, UT
+NM, CO, OK, TX, AZ, UT
+ID, WA, MT, WY, UT, NV, OR
+UT, ID, WY, CO, NM, AZ, NV
+AZ, UT, CO, NM, CA, NV
+WA, ID, OR
+OR, WA, ID, NV, CA
+NV, OR, ID, UT, AZ, CA
+CA, OR, NV, AZ
