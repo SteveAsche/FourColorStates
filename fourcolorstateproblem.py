@@ -20,6 +20,21 @@ class State():
         for neigh in self.neighbors:
             msg += (neigh.name + " ") 
         print("Neighbors -> " + msg)
+
+        # need to color the state.
+
+    def color_state(self):
+        colors = ["red", "blue", "green", "yellow"]
+        pallette = []
+        for i in self.neighbors:
+            pallette.append(i.color) #creates a list of colors
+        for color in colors:
+            if color not in pallette:  # assigns a color that's not in the list
+                self.color = color
+
+
+
+
         
 #this is a test statement
 def create_state_file(statelist):
@@ -80,7 +95,14 @@ newstates = clean_state_list(statelist)
 #linkedstates is a list of 48 states with attached neighbors
 linkedstates = create_states(newstates)
 for link in linkedstates:
+    link.color_state()
+
     link.print_state()
+    if link.color == 'blank':
+        print("HERE'S ONE ^^^^^^^^^^")
 
 print(len(linkedstates))
+
+
+
 
