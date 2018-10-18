@@ -33,6 +33,26 @@ class State():
                 self.color = color
 
 
+#What to do if you can't find a color - recolor it
+def recolor(state):
+    colors = ["red", "blue", "green", "yellow"]
+    existing_color = state.color
+    start_index = colors.index(existing_color)
+    pallette = []
+    success = False
+    for neighbor in state.neighbors:
+        pallette.append(neighbor.color)
+    for i in range(start_index+1,len(colors)-1):
+        if colors[i] not in pallette:
+            #set the color to the current color
+            state.color = colors[i]
+            success = True
+            return success
+    return success
+
+
+
+
 
 
         
@@ -96,10 +116,13 @@ newstates = clean_state_list(statelist)
 linkedstates = create_states(newstates)
 for link in linkedstates:
     link.color_state()
+    
 
     link.print_state()
     if link.color == 'blank':
         print("HERE'S ONE ^^^^^^^^^^")
+        for neighbor in link.neighbors:  #Code to help define what to do in this situation
+            print(neighbor.name + " " + neighbor.color)
 
 print(len(linkedstates))
 
